@@ -14,8 +14,7 @@ output:
 ---
 
 ```{r include=FALSE}
-library(tidyverse)
-library(datasauRus)
+library(tufte)
 options(
   htmltools.dir.version = FALSE, # for blogdown
   show.signif.stars = FALSE     # for regression output
