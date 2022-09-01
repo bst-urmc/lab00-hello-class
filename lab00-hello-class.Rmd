@@ -31,7 +31,7 @@ This is a demonstration file to go in lecture 01. I will run through it in front
 
 Each of your assignments will begin with the following steps. You can always refer back to this lab (or lab 1) for a detailed list of the steps involved for getting started with an assignment.
 
-**FIGURES REMOVED and file paths changed**
+FIGURES REMOVED and directories adjusted.
 
 - Click on the assignment link that you should have received in your email to create your GitHub repository (which we'll refer to as "repo" going forward) for the assignment. This repo contains a template you can build on to complete your assignment.
 
@@ -42,8 +42,9 @@ Each of your assignments will begin with the following steps. You can always ref
 - Go to RStudio clone the assignment repository. 
 ```{r open-a-project-in-the-clone}
 
-# you need to change this to the right repository and location for you and your local machine
-#usethis::create_from_github("https://github.com/bst-urmc/test-assignment-1-tanzylove",destdir="~/Documents/work/teaching/BST430/", fork=FALSE)
+#you need to change this to the right repository and location for you and your local machine
+#usethis::create_from_github("https://github.com/bst-urmc/test-assignment-1-tanzylove",
+#   destdir="~/Documents/work/teaching/BST430/", fork=FALSE)
 
 ```
 
@@ -76,6 +77,7 @@ Before we can get started we need to take care of some required housekeeping. Sp
 Follow the instructions.  **Be sure to save the PAT in a password manager**, you will have to re-enter it, depending on your set-up.
 
 
+
 # Data
 
 Read in some data.
@@ -92,7 +94,7 @@ plot(Calories, Sodium, xlab="Calories", ylab="Sodium", pch=16)
 cor(Calories, Sodium)
 
 plot(Calories, Sodium, xlab="Calories", ylab="Sodium", 
-	col=as.numeric(Type), pch=16)
+	col=factor(Type), pch=16)
 ```
 
 Let's try a different data set. This one about 50 states.
@@ -104,6 +106,8 @@ attach(hsgrads)
 plot(Rain, Education, 
       xlab="Rainfall", ylab="Average Grade Level", pch=16)
 cor(Rain, Education)
+
+args(cor)
 ```
 
 And one final set of flying times.
@@ -138,6 +142,7 @@ Then Go to the Git pane in your RStudio.
 
 If you created a new file, you shoud see it's name here.
 If you have made changes to your Rmd file, you should see it listed here. Click on the change to select it in this list and then click on **Diff**. This shows you the *diff*erence between the last committed state of the document and its current state that includes your changes. If you're happy with these changes, write "Update author name" in the **Commit message** box and hit **Commit**.
+
 
 You don't have to commit after every change, this would get quite cumbersome. You should consider committing states that are *meaningful to you* for inspection, comparison, or restoration. In the first few assignments we will tell you exactly when to commit and in some cases, what commit message to use. As the semester progresses we will let you make these decisions.
 
