@@ -27,38 +27,18 @@ options(
 
 This is a demonstration file to go in lecture 01. I will run through it in front of the class.
 
-# Getting started
-
-Each of your assignments will begin with the following steps. You can always refer back to this lab (or lab 1) for a detailed list of the steps involved for getting started with an assignment.
-
-FIGURES REMOVED and directories adjusted.
-
-- Click on the assignment link that you should have received in your email to create your GitHub repository (which we'll refer to as "repo" going forward) for the assignment. This repo contains a template you can build on to complete your assignment.
-
-- Note that it's not in *your* GitHub folder, it's in the coursespace (so I can see it but you can't see each other's) and it is a copy of the template that I made to be here.
-
-- On GitHub, click on the green **Clone or download** button, select **Use HTTPS** (this might already be selected by default, and if it is, you'll see the text **Clone with HTTPS** as in the image below). Click on the clipboard icon to copy the repo URL.
-
-- Go to RStudio clone the assignment repository. 
-```{r open-a-project-in-the-clone}
-
-#you need to change this to the right repository and location for you and your local machine
-#usethis::create_from_github("https://github.com/bst-urmc/test-assignment-1-tanzylove",
-#   destdir="~/Documents/work/teaching/BST430/", fork=FALSE)
-
-```
-
-- Copy and paste (AM: OK to copy-paste here) the URL of your assignment repo into the function
-- If you need to login to github, a login box should pop up.
-
-
 # Housekeeping
 
 ```{marginfigure}
 Your email address is the address tied to your GitHub account and your name should be first and last name.
 ```
 
-Before we can get started we need to take care of some required housekeeping. Specifically,  we need to configure your git so that RStudio can communicate with GitHub. This requires two pieces of information: your email address and your name.
+Before we can get started we need to take care of some required housekeeping.
+These should only need to be done once, or maybe once a month for the PAT.
+
+Specifically,  we need to configure your git so that RStudio can communicate with GitHub. This requires two pieces of information: your email address and your name.
+
+- install GIT, R, Rstudio (see the Resources on the homepage for links)
 
 -  Let git know about your github username and email by editing this as appropriate and entering it into the Console:
 
@@ -75,6 +55,35 @@ Before we can get started we need to take care of some required housekeeping. Sp
    usethis::create_github_token()
    ```
 Follow the instructions.  **Be sure to save the PAT in a password manager**, you will have to re-enter it, depending on your set-up.
+
+   ```{r, eval = FALSE}
+   gitcreds::gitcreds_set()
+   ```
+paste in the token from the last step.  If you picked this token to have a 6 month expiration, you shouldn't have to do this again.
+
+# Getting started
+
+Each of your assignments will begin with the following steps. You can always refer back to this lab (or other labs) for a detailed list of the steps involved for getting started with an assignment.
+
+FIGURES REMOVED and directories adjusted.
+
+- Click on the assignment link that you should have received in your email to create your GitHub repository (which we'll refer to as "repo" going forward) for the assignment. This repo contains a template you can build on to complete your assignment.
+
+- Note that it's not in *your* GitHub folder, it's in the coursespace (so I can see it but you can't see each other's) and it is a copy of the template that I made to be here.
+
+- On GitHub, click on the green **Clone or download** button, select **Use HTTPS** (this might already be selected by default, and if it is, you'll see the text **Clone with HTTPS** as in the image below). Click on the clipboard icon to copy the repo URL. It will start with the class "bst-urmc" and end with your username "tanzylove" (for me) and the middle is based on what the assignment is named.
+
+- Go to RStudio clone the assignment repository. 
+```{r open-a-project-in-the-clone}
+
+#you need to change this to the right repository and location for you and your local machine
+#usethis::create_from_github("https://github.com/bst-urmc/setup-check-assignment-0-tanzylove",
+#   destdir="~/Documents/work/teaching/BST430/")
+
+```
+
+- Copy and paste (AM: OK to copy-paste here) the URL of your assignment repo into the function
+- If you need to login to github, a login box should pop up.
 
 
 
