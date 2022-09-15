@@ -5,7 +5,7 @@ Yours will have your username and choose a destination, this only works for me:
  
  you need to change this to the right repository and location for you and your local machine
  
- usethis::create_from_github("https://github.com/bst-urmc/test-assignment-1-tanzylove",destdir="~/Documents/work/teaching/BST430/")
+ usethis::create_from_github("https://github.com/bst-urmc/test-assignment-1-tanzylove", destdir="~/classnotes/")
  
 editing in RStudio
 new rstudio 
