@@ -60,7 +60,8 @@ Run these lines in interactive mode (you can copy-and-paste them but you'll have
   user.email = "Tanzy_Love@urmc.rochester.edu")
   ```
 
--  Next, we need to set up a personal access token so that you can write from rstudio cloud to github. To do this, enter use the following command into the Console:
+-  There are a couple of ways to connect to GitHub now with Two Factor Authentication (2FA). However you do it is fine.
+-  If you don't set up 2FA, we need to set up a personal access token so that you can write from rstudio to github. To do this, enter use the following command into the Console; pick a 6 month expiration:
    ```
    usethis::create_github_token()
    ```
@@ -73,15 +74,22 @@ paste in the token from the last step.  If you picked this token to have a 6 mon
 
 # Getting started
 
-Each of your assignments will begin with the following steps. You can always refer back to this lab (or other labs) for a detailed list of the steps involved for getting started with an assignment.
+Each of your assignments will begin with the following steps. You can always refer back to this lab for a detailed list of the steps involved for getting started with an assignment.
 
 This part you will do every time you have an assignment or lab.
-
-FIGURES REMOVED and directories adjusted.
 
 - Click on the assignment link that you should have received in your email to create your GitHub repository (which we'll refer to as "repo" going forward) for the assignment. This repo contains a template you can build on to complete your assignment.
 
 - Note that it's not in *your* GitHub folder, it's in the coursespace (so I can see it but you can't see each other's) and it is a copy of the template that I made to be here.
+
+
+Either:
+
+- On GitHub, click on the clipboard icon to copy the repo URL. It will start with the class "bst-urmc" and end with your username "tanzylove" (for me) and the middle is based on what the assignment is named.
+
+-  Open RStudio and pick {\tt New Project -> Version Control -> GIT}. Paste in the repo URL from github
+
+Or: 
 
 - On GitHub, click on the green **Clone or download** button, select **Use HTTPS** (this might already be selected by default, and if it is, you'll see the text **Clone with HTTPS** as in the image below). Click on the clipboard icon to copy the repo URL. It will start with the class "bst-urmc" and end with your username "tanzylove" (for me) and the middle is based on what the assignment is named.
 
